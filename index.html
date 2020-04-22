@@ -149,6 +149,76 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Android-error-01" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/04/23/Android-error-01/">Android-error-01</a>
+    </h1>
+  
+
+        
+        
+<a href="/2020/04/23/Android-error-01/" class="archive-article-date">
+  	<time datetime="2020-04-22T16:20:48.040Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-23</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="问题解决过程："><a href="#问题解决过程：" class="headerlink" title="问题解决过程："></a>问题解决过程：</h1><h2 id="1-修改onFaile（）函数，使之在控制台打印异常信息"><a href="#1-修改onFaile（）函数，使之在控制台打印异常信息" class="headerlink" title="1.修改onFaile（）函数，使之在控制台打印异常信息"></a>1.修改onFaile（）函数，使之在控制台打印异常信息<img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200422235518981.png" alt="image-20200422235518981"></h2><h2 id="2-点击登录，控制台输出"><a href="#2-点击登录，控制台输出" class="headerlink" title="2.点击登录，控制台输出"></a>2.点击登录，控制台输出</h2><p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200422234950751.png" alt="image-20200422234950751"></p>
+<h2 id="3-百度后"><a href="#3-百度后" class="headerlink" title="3.百度后"></a>3.百度后</h2><p>使用OkHttp3做网络请求框架时，如果是http请求而非https请求，会导致请求失败，因为Android P之后系统限制了明文的网络请求，非加密请求会被系统禁止掉。</p>
+<p>同样如果您使用了WebView加载http协议下的页面，也会出现加载失败，https则不受影响。</p>
+<h2 id="4-修改"><a href="#4-修改" class="headerlink" title="4.修改"></a>4.修改</h2><p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200422235753382.png" alt="image-20200422235753382"></p>
+<h2 id="5-再次登录，控制台输出"><a href="#5-再次登录，控制台输出" class="headerlink" title="5.再次登录，控制台输出"></a>5.再次登录，控制台输出</h2><p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200423000756259.png" alt="image-20200423000756259"></p>
+<h2 id="6-根据这篇博文，有了点变化："><a href="#6-根据这篇博文，有了点变化：" class="headerlink" title="6.根据这篇博文，有了点变化："></a>6.根据这篇博文，有了点变化：</h2><p><a href="https://blog.csdn.net/w180600/article/details/85230778" target="_blank" rel="noopener">https://blog.csdn.net/w180600/article/details/85230778</a></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200423001746672.png" alt="image-20200423001746672"></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/04/23/Android-error-01/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-做安卓工程遇到的问题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -174,7 +244,9 @@
 <li><h2 id="editor-apply-和editor-commit-区别"><a href="#editor-apply-和editor-commit-区别" class="headerlink" title="editor.apply()和editor.commit()区别"></a>editor.apply()和editor.commit()区别</h2></li>
 <li><h2 id="getPreferences-与getDefaultSharedPreferences的区别"><a href="#getPreferences-与getDefaultSharedPreferences的区别" class="headerlink" title="getPreferences 与getDefaultSharedPreferences的区别"></a>getPreferences 与getDefaultSharedPreferences的区别</h2></li>
 <li><h2 id="Looper-prepare-和Looper-loop"><a href="#Looper-prepare-和Looper-loop" class="headerlink" title="Looper.prepare()和Looper.loop()"></a>Looper.prepare()和Looper.loop()</h2></li>
-<li></li>
+<li><h2 id="get和post请求区别"><a href="#get和post请求区别" class="headerlink" title="get和post请求区别"></a>get和post请求区别</h2></li>
+<li><h2 id="JSONObject和JSONArray的区别"><a href="#JSONObject和JSONArray的区别" class="headerlink" title="JSONObject和JSONArray的区别"></a>JSONObject和JSONArray的区别</h2></li>
+<li><h2 id="gson-fromjson方法"><a href="#gson-fromjson方法" class="headerlink" title="gson.fromjson方法"></a>gson.fromjson方法</h2></li>
 </ol>
 
       
